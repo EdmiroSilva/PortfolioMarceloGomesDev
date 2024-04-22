@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #0c0c0c;
+  text-align: right;
+  padding: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 18px;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  color: gainsboro;
+  border: 1px solid;
+  border-radius: 1px;
+  box-shadow: 2px 1px 1px 1px;
+}
+
+.img-rounded {
+  border-radius: 50%;
+  height: 20rem;
+  width: 18rem;
+}
+
+.img-rounded > p {
+  padding: 25px;
+  margin: 8px;
+}
+
+.header {
+  color: #fffbef;
+  background-color: #0c0c0c;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+}
+
+.col-xs-2 {
+  width: 10%;
+  display: grid;
+  gap: 5px;
+  padding: 40px 20px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col-xs-2:hover {
+  color: gray;
+  box-shadow: #131e2f 2px 2px 2px -3px;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.iconImg {
+  width: 40%;
+}
+
+.col-sm-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container-fluid {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h1,
+h4,
+h3,
+h2 {
+  font-family: Raleway;
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  font-family: Raleway;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.lastDiv {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  position: relative;
+  background-color: grey;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) and (min-width: 315px) {
+  .container {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 17%;
+  }
+
+  .iconImg {
+    max-width: 50%;
+  }
+
+  .col-xs-2 {
+    width: 50%;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .navbar a {
+    display: inline;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  #portfolio {
+    padding-top: 45%;
+  }
+}
